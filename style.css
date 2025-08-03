@@ -1,0 +1,508 @@
+/* === MAIN SECTION STYLING === */
+.main{
+    width: 100%;
+    background-image:
+    url(https://marketplace.canva.com/EAFignEDSxM/1/0/1131w/canva-gold-and-blue-watercolor-creative-portfolio-cover-page-sgeL058nE7Y.jpg);
+    background-size: cover;
+    background-position:center ;
+    height: 100vh;
+
+}
+/* === ICON CONTAINER POSITIONING === */
+.icon{
+    padding-left: 300px;
+    padding-top: 220px;
+  
+}
+/* === LOGO TEXT STYLING === */
+.logo{
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif ;
+    display:block;
+    margin-bottom: 50px;
+}
+/* Show menu when checkbox is checked */
+
+/* === TOGGLE TO DISPLAY NAVBAR (WITH CHECKBOX HACK) === */
+#home-toggle:checked ~ .navbar {
+  display: block;
+}
+/* === HOME BUTTON CONTAINER STYLING === */
+.home-wrapper {
+  padding-left: 260px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 180px;
+  margin-top: 80px;
+}
+/* === HOME BUTTON STYLING === */
+.home-btn {
+  background-color: #433c59;
+  color: white;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 30px;
+  
+}
+
+.home-btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* === MENU NAVBAR CONTAINER === */
+#mainMenu {
+  justify-content: top;
+  padding-top: 30px;
+  
+}
+/* === MAIN NAVIGATION BAR STYLING === */
+.navbar {
+  width: fit-content;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* === MENU LIST CONTAINER === */
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+/* === INDIVIDUAL MENU ITEM SPACING === */
+.menu li {
+  margin: 0 15px;
+  
+}
+/* Shared tab style */
+.tab-button {
+  background: rgb(rgb(126, 7, 7));
+  padding: 10px 20px;
+  margin: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: none;
+}
+
+.tab-button:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle hover */
+}
+
+/* Individual styles */
+.btn-about {
+  background-color: #4CAF50;
+  color: #FF5722;
+  border-radius: 3px;
+}
+
+.btn-interest {
+  background-color: #2196F3;
+  color: #0fef4e;
+  border-radius: 2px;
+}
+
+.btn-project {
+  background-color: #FF9800;
+  color: #3b0a42;
+  border-radius: 2px;
+}
+
+.btn-education {
+  background-color: #9C27B0;
+  border-radius: 2px;
+
+}
+
+.btn-contacts {
+  background-color: #F44336;
+  border-radius: 2px;
+}
+
+/* Hover effects */
+.btn-about:hover {
+  background-color: #45a049;
+}
+
+.btn-interest:hover {
+  background-color: #1976D2;
+}
+
+.btn-project:hover {
+  background-color: #FB8C00;
+}
+
+.btn-education:hover {
+  background-color: #7B1FA2;
+}
+
+.btn-contacts:hover {
+  background-color: #D32F2F;
+}
+
+/* Shared slide style */
+.slide {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 40px;
+  z-index: 999; /* Make it appear on top */
+  border-radius: 0;
+  box-shadow: none;
+}
+#about:target,
+#interest:target,
+#project:target,
+#education:target,
+#contacts:target {
+  display: block;
+}
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #444;
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+/* Individual background cover + border color */
+#about {
+  background-image:
+   url( 'https://tse4.mm.bing.net/th/id/OIP.TRgbeZsXCMcMaK3QUA5qOQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3');
+  border-color: #4CAF50;
+  background-size: cover;
+}
+/* === ABOUT SECTION PARAGRAPH STYLING === */
+.about-paragraph {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #e80ea0;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 100px auto 30px;
+  padding: 25px;
+  background: linear-gradient(145deg, #51112f, #ea117a);
+  border-left: 6px solid #2e86de;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* === ABOUT SECTION HOVER EFFECT === */
+.about-paragraph:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  color: goldenrod;
+}
+
+/* === FADE IN UP ANIMATION KEYFRAMES === */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-paragraph {
+  animation: fadeInUp 1.2s ease-in-out both;
+}
+/* === NAVIGATION BAR DEFAULT (HIDDEN INITIALLY) === */
+ .navbar {
+  display: none;
+}
+
+
+/* === PROJECT SECTION WRAPPER === */
+#project {
+  background-image:
+  url('https://th.bing.com/th/id/R.06f81c0c19af30b0163becbbb06637a3?rik=wO%2fIshmR2%2be51w&pid=ImgRaw&r=0') ;
+  border-color: #FF5722;
+  padding: 2em;
+  border-radius: 15px;
+  max-width: 1100px;
+  margin: auto;
+}
+/* === PROJECT CARD GRID CONTAINER === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+/* === INDIVIDUAL PROJECT CARD STYLE === */
+.project-card {
+  background: #0b0f02;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1.5em;
+  transition: transform 0.2s ease-in-out;
+}
+/* === CARD HOVER EFFECT === */
+.project-card:hover {
+  transform: scale(1.02);
+}
+/* === PROJECT TITLE STYLE === */
+.project-card h3 {
+  color: #5f4b8b;
+  margin-bottom: 0.6em;
+}
+/* === PROJECT DESCRIPTION TEXT === */
+.project-card p {
+  font-size: 0.95em;
+  color: #555;
+  line-height: 1.6;
+}
+/* === PROJECT DESCRIPTION TEXT === */
+.project-link {
+  display: inline-block;
+  margin-top: 1em;
+  text-decoration: none;
+  background: #5f4b8b;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  font-size: 0.9em;
+  transition: background 0.2s ease-in-out;
+}
+/* === BUTTON HOVER STATE === */
+.project-link:hover {
+  background: #46336e;
+}
+/* === EDUCATION SECTION WRAPPER === */
+#education {
+  background-image:
+   url('https://www.edmchicago.com/wp-content/uploads/2021/05/E-learning-Software-Development-1-768x486.jpg');
+  border-color: #9C27B0;
+}
+/* === EDUCATION STEPS CONTAINER === */
+.education-steps {
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-left: 6px solid #ce93d8;
+  border-radius: 10px;
+  font-size: 16.5px;
+  line-height: 2;
+  font-family: 'Segoe UI', sans-serif;
+  color: #c119db;
+}
+/* === INDIVIDUAL EDUCATION STEP ITEM === */
+.education-steps li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+}
+/* === ICON STYLING BEFORE EACH LIST ITEM === */
+.education-steps li::before {
+  content: "🎓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.1em;
+}
+
+/* === INTEREST SECTION CONTAINER === */
+#interest {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-left: 6px solid #4caf50;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  animation: slideIn 1s ease;
+  font-family: 'Segoe UI', sans-serif;
+  background-image:
+   url('https://tse1.mm.bing.net/th/id/OIP.ewcxxjyYrAzQl_diSSGBuAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3');
+}
+/* === INTEREST SECTION HEADER === */
+#interest h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #ea17b5;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+/* === LIST CONTAINER FOR INTEREST ITEMS === */
+.interests-list {
+  font-size: 17px;
+  line-height: 1.9;
+  text-align: left;
+  margin-bottom: 35px;
+  padding: 20px 25px;
+  background-color: #fff6fc;
+  color: #3b0a42;
+  border-left: 5px solid #f06292;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInUp 1.2s ease-in-out both;
+
+/* === INDIVIDUAL LIST ITEM STYLE === */
+}.interests-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  color: #3b0a42;
+}
+
+.interests-list li:before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.1em;
+}
+
+
+/* === INTERESTS: Drives Me Text Block === */
+ .drives-me-text {
+  font-size: 16.5px;
+  line-height: 1.9;
+  text-align: justify;
+  color: #f028a0;
+  background: #f0fff5;
+  padding: 25px;
+  border-left: 5px solid #66bb6a;
+  border-radius: 10px;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  animation: slideIn 1.3s ease;
+ }
+
+/* === EMPHASIZED INLINE TEXT === */
+.emphasis {
+  font-weight: 600;
+  background-color: #e8f5e9;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* === SUBHEADINGS WITHIN INTEREST SECTION === */
+.interest-subheading {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #388e3c;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* === ITALIC HIGHLIGHTED TEXT STYLE === */
+.highlight {
+  color: #2e7d32;
+  font-style: italic;
+}
+/* === ANIMATION KEYFRAMES === */
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* === CONTACTS SECTION CONTAINER === */
+#contacts {
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin: auto;
+  background-image: url('https://wallpaperaccess.com/full/3124617.jpg');
+  border-color: #FF9800;
+  background-size: cover;
+}
+
+/* === INTRO TEXT FOR CONTACT SECTION === */
+.contact-intro {
+  font-style: italic;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: #555;
+}
+/* === CONTACT DETAILS LIST === */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2em;
+  line-height: 2em;
+}
+/* === LINKS WITHIN CONTACT INFO === */
+.contact-info li a {
+  color: #5f4b8b;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* === LINKS WITHIN CONTACT INFO === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+/* === INPUT FIELDS & TEXTAREA === */
+.contact-input,
+.contact-textarea {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1em;
+  width: 100%;
+}
+/* === CUSTOM TEXTAREA === */
+.contact-textarea {
+  resize: vertical;
+  height: 120px;
+}
+/* === SEND BUTTON (DISABLED LOOK) === */
+.send-btn {
+  padding: 0.9em;
+  background-color: #5f4b8b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
